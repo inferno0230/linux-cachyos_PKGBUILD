@@ -124,7 +124,7 @@ _use_auto_optimization=${_use_auto_optimization-y}
 # "full: uses 1 thread for Linking, slow and uses more memory, theoretically with the highest performance gains."
 # "thin: uses multiple threads, faster and uses less memory, may have a lower runtime performance than Full."
 # "none: disable LTO
-_use_llvm_lto=${_use_llvm_lto-none}
+_use_llvm_lto=${_use_llvm_lto-full}
 
 # Use suffix -lto only when requested by the user
 # Enabled by default.
@@ -712,7 +712,7 @@ for _p in "${pkgname[@]}"; do
 done
 
 b2sums=('f057c2512040600fbf0df67cf9c7200aee0c06b82b3cf749be8c5685844d2662a585ce17685c7af880c0d9dbbbd81302e5a1fa41c3dbd39869123121a0e82dc2'
-        '8178cdd3224ca5b7ef9e971fdb403b57d4f4e44d3b9de31cf118bc1b195cf5d376b424cd5a5013c10182116b9ed18d09b893633ccf2486454d60bcced32149a0'
+        '63d12e10875c3aec954e407a82f8e7b4655022ddf2babeac8a01f32ffa7352294ab04121dfbcb5757f41c4c4e7e1f1bfaa56408a12282dab5f3091fc8e0df924'
         '43ef7a347878592740d9eb23b40a56083fa747f7700fa1e2c6d039d660c0b876d99bf1a3160e15d041fb13d45906cdb5defef034d4d0ae429911864239c94d8d'
         '2a1405c927f5f21b0f88ffa43dd5137750929ad348d9fa5ee01e8e3d20bf98808be6cbc8a5b0c355245de4347f6db02af4d116262a3a672c790db431ee1cd243'
         '986e2c306529bd7f298683bc4c505f192880a8e164a62ac202a662fd3983290f64a0b490960676196fc6f923fd56c1be490c0e22d68f48277ad5dca71692eb50')

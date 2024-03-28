@@ -34,7 +34,7 @@ pkgbase = linux-cachyos-bore
 	b2sums = 2a1405c927f5f21b0f88ffa43dd5137750929ad348d9fa5ee01e8e3d20bf98808be6cbc8a5b0c355245de4347f6db02af4d116262a3a672c790db431ee1cd243
 	b2sums = 986e2c306529bd7f298683bc4c505f192880a8e164a62ac202a662fd3983290f64a0b490960676196fc6f923fd56c1be490c0e22d68f48277ad5dca71692eb50
 
-pkgname = linux-cachyos-bore
+pkgname = linux-cachyos-bore-lto
 	pkgdesc = The Linux EEVDF-BORE scheduler Kernel by CachyOS with other patches and improvements kernel and modules
 	depends = coreutils
 	depends = kmod
@@ -48,7 +48,7 @@ pkgname = linux-cachyos-bore
 	provides = KSMBD-MODULE
 	provides = UKSMD-BUILTIN
 
-pkgname = linux-cachyos-bore-headers
+pkgname = linux-cachyos-bore-lto-headers
 	pkgdesc = Headers and scripts for building modules for the Linux EEVDF-BORE scheduler Kernel by CachyOS with other patches and improvements kernel
 	depends = pahole
 	depends = linux-cachyos-bore
